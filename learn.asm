@@ -57,3 +57,18 @@ equ is like const
 panjang equ 5 ; panjang = 5
 lebar equ 3 ; lebar = 3
 luas equ panjang * lebar ; luas = 5 * 3 = 15
+
+%assign -> untuk mendefinisikan variabel yang bisa diubah
+
+%assign panjang 5 ; panjang = 5
+mov eax, panjang ; eax = 5
+
+%assign panjang panjang + 1 ; panjang = 5 + 1 = 6
+mov eax, panjang ; eax = 6
+
+%define -> untuk mendefinisikan apapun yang bisa diubah(nilai, string, operand, dll)
+
+%define NAMA_KONSTANT nilai
+
+%define ptr [ebp + 4]
+mov eax, ptr
